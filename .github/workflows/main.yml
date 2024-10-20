@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy 🚀
         run: |
-          npx angular-cli-ghpages --dir=dist/angular_app
+          npm run ng -- deploy --base-href=/angular_app/ --name="Displayed Username" --email=solethu@ssongca.com
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
