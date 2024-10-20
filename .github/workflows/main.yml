@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy 🚀
         run: |
-          npm run ng -- deploy --base-href=/angular_app/ --name="Displayed Username" --email=solethu@ssongca.com
+          npm run ng -- deploy --base-href=https://solethus.github.io/angular_app --name="solethus" --email=solethu@ssongca.com
         env:
           CI: true
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
